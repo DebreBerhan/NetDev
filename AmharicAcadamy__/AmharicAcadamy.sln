@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicFinder", "ClinicFinder\ClinicFinder.csproj", "{8131B192-718E-428E-B8C7-C1C71EFB920C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmharicAcademy", "AmharicAcadamy\AmharicAcademy.csproj", "{2F01B2D7-E7E5-44DA-BE4F-9A4E1C2237FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8131B192-718E-428E-B8C7-C1C71EFB920C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8131B192-718E-428E-B8C7-C1C71EFB920C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8131B192-718E-428E-B8C7-C1C71EFB920C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8131B192-718E-428E-B8C7-C1C71EFB920C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F01B2D7-E7E5-44DA-BE4F-9A4E1C2237FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F01B2D7-E7E5-44DA-BE4F-9A4E1C2237FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F01B2D7-E7E5-44DA-BE4F-9A4E1C2237FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F01B2D7-E7E5-44DA-BE4F-9A4E1C2237FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3D37ECE9-BCDC-401D-8E00-763A2CDD0439}
+		SolutionGuid = {AAF30E7A-A17C-4027-9F60-4EDBF65A210D}
 	EndGlobalSection
 EndGlobal

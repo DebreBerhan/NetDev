@@ -1,0 +1,27 @@
+﻿@model Meskel.Models.Product
+@{
+    ViewData["Title"] = "Cart";
+}
+
+
+<h1>Checkout</h1>
+
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Color)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Color)
+    </dd>
+    <dt class="col-sm-2">
+        <div class="col-item">
+            <img src="~/images/@Model.PpImage" class="img-responsive" alt="a" width="360" height="450" />
+        </div>
+    </dt>
+</dl>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

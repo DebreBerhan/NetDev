@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meskel", "Meskel\Meskel.csproj", "{84793133-8AB9-40AF-8185-1B9013ABA2A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meskel", "Meskel\Meskel.csproj", "{042E80C6-EA79-4259-B24C-0FC3684D9A5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{84793133-8AB9-40AF-8185-1B9013ABA2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84793133-8AB9-40AF-8185-1B9013ABA2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84793133-8AB9-40AF-8185-1B9013ABA2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84793133-8AB9-40AF-8185-1B9013ABA2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042E80C6-EA79-4259-B24C-0FC3684D9A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042E80C6-EA79-4259-B24C-0FC3684D9A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042E80C6-EA79-4259-B24C-0FC3684D9A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042E80C6-EA79-4259-B24C-0FC3684D9A5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {26A43126-B180-420D-B5ED-B2EEFA9B2582}
+		SolutionGuid = {4A460B92-104A-44D3-8EB1-A38330978617}
 	EndGlobalSection
 EndGlobal

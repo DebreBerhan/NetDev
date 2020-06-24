@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Meskel.Models.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <header>
+           <img class="w3-image" src="~/images/logo.jpg" alt="Jewelry" width="1500" height="400"> 
+            <div class="w3-display-middle w3-margin-top w3-center">
+                <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Meskel</b></span> <span class="w3-hide-small w3-text-light-grey">Jewlery</span></h1>
+            </div>
+    </header>
+
+<h3>Our Products</h3>
+    <tbody>
+        <table>
+            <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    @foreach (var pageIndex in Enumerable.Range(0, (Model.Count() - 1)))
+                    { 
+                        <div class="item@(pageIndex == 0 ? " active" : "")">
+                            <div class="row">
+                                <form asp-page-handler="Add">
+                                    @foreach (var pp in Model.Skip(pageIndex * 4).Take(4))
+                                    {
+                                        <div class="col-sm-3">
+                                            <div class="col-item">
+                                                <div class="photo">
+                                                    <img src="~/images/@pp.PpImage" class="img-responsive" alt="a" width="270" height="360" />
+                                                </div>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="price col-md-6">
+                                                            <h5 class="truncate">
+                                                                @pp.Color
+                                                            </h5>
+                                                            <h5 class="price-line">
+                                                                $<span class="price-text-color">@pp.Price</span>
+                                                            </h5>
+                                                            <h5>
+                                                                <a asp-controller="Home" asp-action="Details" asp-route-Id="@pp.Id">Details</a>
+                                                            </h5>
+                                                            <div style="margin-bottom:30px;">
+                                                                <a asp-controller="Home" asp-action="Cart" asp-route-Id="@pp.Id"style="background-color: #a1d6e2; margin-left: 10px">Add to Cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </form>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </table>
+    <div>
+
+    </div>
+    </tbody>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Meskel.Models.Design>
+@{
+    ViewData["Title"] = "Index";
+}
+<tbody>
+    <h1 style="margin-bottom:100px;">Design Page</h1>
+    <p>Select crosses from left side</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>Cross Selection</p>
+
+                @foreach (var item in Model)
+                {
+
+                    <div class="col-item">
+                        <div class="photo">
+                            <img src="~/images/@item.ImageFile" class="img-responsive" alt="a" width="120" height="150" style="margin-bottom:20px" onclick="location.href='@Url.Action("Index", "Design")'" />
+                        </div>
+
+                    </div>
+                }
+            </div>
+            <div class="col-sm">
+                <div style=""></div>
+            </div>
+            <div class="col-sm">
+                <p>Bead Selection</p>
+                <select id="BeadColor">
+                    <option value="Green">Green</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Pink">Pink</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</tbody>

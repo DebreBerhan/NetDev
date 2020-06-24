@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>Contact</title>
+</head>
+<body>
+    @model ContactModel
+    <div style="background-color:#d5ccaa;">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <h4>Send your comments.</h4>
+            <hr />
+            <div class="form-group">
+                @Html.LabelFor(m => m.SenderName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.SenderName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.SenderName)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.SenderEmail, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.SenderEmail, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.SenderEmail)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Message)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" class="btn btn-default text-light" value="Send Message" style="background-color:#2A475D;padding-left:20px;padding-right:20px;" />
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>

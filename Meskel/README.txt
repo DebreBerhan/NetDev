@@ -6,7 +6,7 @@
      Design.csv for the data 
  
  -- Meskel folder
-    Contains Contians COntrollers , models and View
+    Contains  Controllers , models and View
 
   
 
